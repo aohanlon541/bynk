@@ -1,0 +1,178 @@
+:root {
+  --color-white: #fff;
+  --color-black: #000;
+  --color-red: #D8000C;  
+  --color-dark-3-lavender: #130b2b;
+  --color-dark-2-lavender: #1e1144;
+  --color-dark-1-lavender: #29175d;
+  --color-lavender: #6035d9;
+  --color-light-lavender: #f3eff9;
+  --color-dark-grey: #424245;
+  --color-grey: #9e9ea1;
+  --color-light-grey: #f5f5f8;
+  --color-green: #179d5e;
+  --color-violet: #9b7ddc;
+  --color-violet-touch: #f3eff9;
+  --color-violet-dark: #5e5278;
+  --color-violet-light: #e6ddf3;
+  --color-violet-touch-light: #fdfbff;
+  --color-violet-dark-trans: rgba(94,82,120,0.95);
+  --color-smoke-light: #bdbdc0;
+  --color-smoke: #939393;
+  --color-smoke-dark: #181818;
+  --color-smoke-touch: #e3e3e3;
+  --color-smoke-touch-light: #f9f9f9;
+  --color-header: #29175d;
+  --color-text: #2a1e5c;
+  --color-bynk-purple: #6035d9;
+  --color-bynk-purple-dark: #3f238f;
+  --color-bynk-purple-light: #8455b2;
+}
+
+body {
+  font-family: sans-serif;
+  color: var(--color-header);
+}
+
+header {
+  height: 100px;
+  background: linear-gradient(-180deg,#e6dff9,#cec0f3);
+  display: flex;
+  align-items: center;
+}
+
+.Logo-div {
+  padding: 16px 16px;
+  max-height: 178px;
+}
+
+.Logo-img {
+  width: 150px;
+}
+
+.Survey {
+  background-color: var(--color-white);
+    padding: 64px 16px 84px;
+    max-width: 640px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+label {
+  color: var(--color-header);
+  font-size: 24px;
+  font-family: sans-serif;
+  font-weight: bold;
+  letter-spacing: .24px;
+  line-height: 16px;
+  position: absolute;
+  -webkit-transform-origin: top left;
+  transform-origin: top left;
+  -webkit-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+  -webkit-transform: translate(0) scale(1);
+  transform: translate(0) scale(1);
+  z-index: inherit;
+  cursor: text;
+  -webkit-transform: translate(1px,-14px) scale(.75);
+  transform: translate(1px,-14px) scale(.75);
+}
+
+.input {
+  width: 100%;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  background-color: var(--color-smoke-touch-light);
+  padding: 0 16px;
+  flex-basis: 256px;
+  border-radius: 4px;
+}
+
+.input-field, input:-internal-autofill-selected {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  color: var(--color-bynk-purple);
+  font-size: 16px;
+  font-family: sans-serif;
+  letter-spacing: .16px;
+  line-height: 24px;
+  margin-top: 24px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+ div.Select__control, div.Select__indicators, span.Select__indicator-separator   {
+  width: 10%;
+}
+
+#country {
+  width: 100%;
+  margin-top: 32px;
+}
+
+div.Select__control {
+  display: flex;
+  width: 100%
+}
+
+div.Select__value-container {
+  min-width: 400px;
+  padding: 0px;
+}
+
+.Select__indicators {
+  width: 100%;
+  background: transparent;
+  margin: 0;
+}
+
+.Select__indicators > span {
+  background: transparent;
+}
+
+.Select__indicator-separator {
+  background: transparent
+}
+
+.Error-message {
+  color: var(--color-red);  
+  min-height: 25px;
+}
+
+.Error-message > p {
+  margin: 4px 0 10px 16px;
+}
+
+.Submit-button-div {
+  text-align: center;
+  margin: 20px;
+}
+
+.Submit-button {
+    color: var(--color-white);
+    font-family: sans-serif;
+    font-size: 18px;
+    height: 40px;
+    width: 100%;
+    max-width: 150px;
+    border-radius: 2px;
+    cursor: pointer;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+    background: linear-gradient(180deg,var(--color-bynk-purple),var(--color-bynk-purple-dark));
+    border: none;
+}
