@@ -38,12 +38,16 @@ class CountryDropDownField extends Component {
 
     getLocalStorage() {
         var value = JSON.parse(localStorage.getItem("country"));
+        var swedenValue = {
+            "value": "Sweden",
+            "label": "Sweden"
+        };
+        if (value === null) {
+            this.setLocalStorage(swedenValue);
+        }
+        this.props.onConfirmValidation("country", true);
         this.setState({
-            selected: value !== null
-                ? value : {
-                    "value": "Sweden",
-                    "label": "Sweden"
-                }
+            selected: value === null ? swedenValue : value
         });
     }    
 
@@ -89,6 +93,7 @@ class CountryDropDownField extends Component {
                             required
                             classNamePrefix="Select"
                             id="country"
+                            className="c-input-div"
                             name="country"
                             value={this.state.selected}
                             options={countryData}

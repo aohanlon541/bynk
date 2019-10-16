@@ -176,3 +176,16 @@ div.Select__value-container {
     background: linear-gradient(180deg,var(--color-bynk-purple),var(--color-bynk-purple-dark));
     border: none;
 }
+
+.Error-submit-message {
+  color: var(--color-red);
+  text-align: center;
+  font-weight: 500;
+  padding: 12px;
+  border: var(--color-red);
+  background: rgba( 216, 0, 12, .2);
+  border: var(--color-red) 3px solid;
+  border-radius: 10px;
+  width: 100%;
+  margin: 10px 0;
+}
